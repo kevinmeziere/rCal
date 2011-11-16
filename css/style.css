@@ -15,20 +15,141 @@ h1 {
 }
 
 .calRow {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 714px;
+	/*
+-moz-box-shadow: inset 0 -2px 2px #aaa;
+  	-webkit-box-shadow: inset 0 -2px 2px #aaa;
+  	box-shadow: inset 0 -2px 2px #aaa;
+*/
 }
 
 .calDay {
+	background-color: #FFFFFF;
+
+	position: relative;
+	height: 100px;
+	/*
+border-width: 1px;
+	border-style: solid;
+*/
+	float: left;
+	width: 102px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	color:#666666;
+/* 	margin-right: 2px; */
+	-moz-box-shadow: inset -2px -2px 5px -2px #aaa;
+  	-webkit-box-shadow: inset -2px -2px 5px -2px #aaa;
+  	box-shadow: inset -2px -2px 5px -2px #aaa;
+	
+}
+
+
+.calDay.last {
+	-moz-box-shadow: inset 0px -2px 5px -2px #aaa;
+  	-webkit-box-shadow: inset 0px -2px 5px -2px #aaa;
+  	box-shadow: inset 0px -2px 5px -2px #aaa;
+	
+}
+
+
+.calDayInactive.calDay {
+	color:#cccccc;
+}
+
+.today{
+	/* IE10 */ 
+background-image: -ms-linear-gradient(top, #CCCCCC 0%, #AAAAAA 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #CCCCCC 0%, #AAAAAA 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #CCCCCC 0%, #AAAAAA 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #CCCCCC), color-stop(1, #AAAAAA));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #CCCCCC 0%, #AAAAAA 100%);
+
+/* Proposed W3C Markup */ 
+background-image: linear-gradient(top, #CCCCCC 0%, #AAAAAA 100%);
+
+color:white;
+text-shadow: 0px -1px 0px black;
 }
 
 .calContainer {
 }
 
-.calColumnTitles {
+.calColumnTitle {
+	text-transform: lowercase;
+	font-size: 0.92em;
+	font-family: helvetica, sans-serif;
+	position: absolute;
+	right: 2px;
+	display:block;
 }
 
-.calDayTitles {
+.calColumnTitleContainer{
+	height: 1em;
+	position: relative;
+	float: left;
+	width: 102px;
+	padding-bottom: 4px;
+	-moz-box-shadow: inset 0px -2px 2px -2px #333;
+  	-webkit-box-shadow: inset 0px -2px 2px -2px #333;
+  	box-shadow: inset 0px -2px 2px -2px #333;
+}
+
+.calDayTitle {
+	font-weight: bold;
+	font-size: 1.2em;
+	font-family: helvetica, sans-serif;
+	right: 5px;
+	bottom: 2px;
+	position: absolute;
+	/* float: right; */
+	display:block;
+}
+
+.dayEvent {
+	width: 15px; height: 15px;
+	background: url("../images/dots.png");
+	text-indent: -9999px;
+	float: left;
+}
+
+.room1 {
+	background-position-x: 0px;
+	background-position-y: 0px;
+}
+
+.room2 {
+	background-position-x: 0px;
+	background-position-y: 15px;
+}
+
+.room3 {
+	background-position-x: 0px;
+	background-position-y: 30px;
 }
 
 .menuContainer {
+	min-width: 45px;
+	height: 100%;
+	z-index: 2;
+	background-color: red;
+	float: right;
+	position:absolute;
+	clear: both;
+	top: 0px;
+	right: 0px;
 }
+
+
 
