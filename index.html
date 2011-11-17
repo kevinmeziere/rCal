@@ -3,11 +3,13 @@
 	<head>
 		<title>JPCU Cal</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css"> 
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js" type="text/javascript"></script>
+		<script src="js/layout.js" type="text/javascript"></script>
 	</head>
 	<body> 
-	<h1>November</h1>
+		<div id="header"><h1>November</h1></div>
 		<div class="calContainer">
-			<div class="calRow">
+			<div class="titleRow">
 				<div class="calColumnTitleContainer">
 					<div class="calColumnTitle">Sunday</div>
 				</div>
@@ -44,9 +46,9 @@
 					<div class="calDayTitle">31</div>
 				</div>
 				<div class="calDay">
-					<div class="dayEvent room1">Room 1</div>
-					<div class="dayEvent room2">Room 2</div>
-					<div class="dayEvent room3">Room 3</div>
+					<div class="dayEvent room1"><span class="dayEventTime">8am</span>Intro to Phil.</div>
+					<div class="dayEvent room2"><span class="dayEventTime">11am</span>Mass</div>
+					<div class="dayEvent room3"><span class="dayEventTime">3pm</span>Bus. Law</div>
 					<div class="calDayTitle">1</div>
 				</div>
 				<div class="calDay">
@@ -56,6 +58,11 @@
 					<div class="calDayTitle">3</div>
 				</div>
 			</div>
+			<!--
+			<div class="detailRow">
+				<h1>Thursday, Nov. 1</h1>
+				
+			</div> -->
 			<div class="calRow">
 				<div class="calDay">
 					<div class="calDayTitle">4</div>
